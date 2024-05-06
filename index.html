@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/81ed789937.js" crossorigin="anonymous"></script>
+    <title>🖩Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+    <div class="container flex" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+        <input type="text" id="display" placeholder="" readonly>
+        <div class="btn-container flex">
+            <div class="row-buttons">
+                <button onclick="toDisplay('7')">7</button>
+                <button onclick="toDisplay('8')">8</button>
+                <button onclick="toDisplay('9')">9</button>
+                <button onclick="toDisplay('+')">+</button>
+            </div>
+
+            <div class="row-buttons">
+                <button onclick="toDisplay('4')">4</button>
+                <button onclick="toDisplay('5')">5</button>
+                <button onclick="toDisplay('6')">6</button>
+                <button onclick="toDisplay('-')">-</button>
+            </div>
+
+            <div class="row-buttons">
+                <button onclick="toDisplay('1')">1</button>
+                <button onclick="toDisplay('2')">2</button>
+                <button onclick="toDisplay('3')">3</button>
+                <button onclick="toDisplay('*')">*</button>
+            </div>
+            <div class="row-buttons">
+                <button onclick="toDisplay('0')">0</button>
+                <button onclick="toDisplay('.')">.</button>
+                <button onclick="toDisplay('9')">9</button>
+                <button onclick="toDisplay('/')">/</button>
+            </div>
+
+            <div class="main-buttons">
+                <button id="clear-btn">CLEAR</button>
+                <button id="result-btn">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
